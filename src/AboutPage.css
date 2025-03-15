@@ -55,8 +55,10 @@
 
 /* ✅ Social Media Links */
 .social-links {
+
     margin-top: 1.5rem;
     display: flex;
+    list-style: none;
     justify-content: center;
     gap: 15px;
 }
