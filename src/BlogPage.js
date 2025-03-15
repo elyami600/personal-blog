@@ -2,6 +2,7 @@ import Styles from "./about.module.css";
 import Skills from "./Skills";
 import imagen from "./ypb.jpeg";
 import { FaXTwitter, FaLinkedin, FaGithub } from "react-icons/fa6"; // Social Icons
+import { SiLeetcode } from "react-icons/si"; // LeetCode Icon
 
 const Blog = () => {
     return (
@@ -42,7 +43,12 @@ const Blog = () => {
                                 <a href="https://github.com/elyami600" className={`${Styles.social_link} ${Styles.github}`} target="_blank" rel="noopener noreferrer">
                                     <FaGithub className={Styles.neon_icon} /> 
                                 </a>
-                            </li>            
+                            </li>
+                            <li>
+                                <a href="https://leetcode.com/u/elyami600/" className={`${Styles.social_link} ${Styles.leetcode}`} target="_blank" rel="noopener noreferrer">
+                                    <SiLeetcode className={Styles.neon_icon} /> 
+                                </a>
+                            </li>           
                         </ul>
                     </div>
                 </div>
