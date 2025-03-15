@@ -1,0 +1,168 @@
+/* ✅ About Page Container */
+.about-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 3rem;
+    text-align: center;
+    /* background: rgba(20, 20, 20, 0.95); */
+    border-radius: 12px;
+    box-shadow: 0 0 35px rgba(255, 20, 147, 0.7);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* ✅ Headings with Neon Glow */
+.about-container h1, .about-container h2 {
+    color: #ff1493; /* Neon Pink */
+    text-shadow: 0 0 15px rgba(255, 20, 147, 0.8);
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.about-container h1:hover, .about-container h2:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 20px rgba(255, 20, 147, 1);
+}
+
+/* ✅ Paragraph Styling */
+.about-container p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ddd;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.about-container p:hover {
+    color: #ffffff;
+}
+
+/* ✅ List Styling */
+.about-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #00ff99;
+}
+
+.about-list li {
+    padding: 8px 0;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-list li:hover {
+    transform: scale(1.05);
+}
+
+/* ✅ Social Media Links */
+.social-links {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* ✅ Social Link Buttons */
+.social_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ✅ Hover Effect for Social Links */
+.social_link:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
+}
+
+/* ✅ Individual Neon Colors */
+.github {
+    background-color: #ff1493;
+    box-shadow: 0 0 30px rgba(255, 20, 147, 0.7);
+}
+
+.linkedin {
+    background-color: #00ff99;
+    box-shadow: 0 0 30px rgba(0, 255, 153, 0.8);
+}
+
+.email {
+    background-color: #1e90ff;
+    box-shadow: 0 0 30px rgba(30, 144, 255, 0.7);
+}
+
+/* ✅ Hover Effects */
+.github:hover {
+    background-color: #d40073;
+}
+
+.linkedin:hover {
+    background-color: #00cc77;
+}
+
+.email:hover {
+    background-color: #0070d4;
+}
+
+/* ✅ Download CV Section */
+.cv-section {
+    margin-top: 2rem;
+}
+
+.download-cv {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, #ff1493, #00ff99);
+    border-radius: 8px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.download-cv:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 35px rgba(255, 255, 255, 0.8);
+}
+
+.cv-icon {
+    font-size: 1.5rem;
+}
+
+
+/* ✅ Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ✅ Responsive Design */
+@media screen and (max-width: 768px) {
+    .about-container {
+        padding: 2rem;
+    }
+
+    .social-links {
+        flex-direction: column;
+    }
+
+    .social_link {
+        width: 80%;
+        text-align: center;
+    }
+}
